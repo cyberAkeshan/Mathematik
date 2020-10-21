@@ -2,26 +2,126 @@
 
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage{lmodern}
 \usepackage[latin1, utf8]{inputenc}% erm\"oglich die direkte Eingabe der Umlaute 
 \usepackage[T1]{fontenc} % das Trennen der Umlaute
 \usepackage{ngerman} % hiermit werden deutsche Bezeichnungen genutzt und 
-\usepackage[left=2.5cm,right=3cm,top=2cm,bottom=2cm,includeheadfoot]{geometry}
+\usepackage[left=3cm,right=3cm,top=1cm,bottom=2cm,includeheadfoot]{geometry}
 \usepackage{fancyhdr}
 \usepackage{pgf-pie} 
 \usepackage{setspace} 
 
 %Wie ändert die Corona-Krise das Kommunikationsverhalten
 \title{Mathematik 1 mal 1}
-\author{Akeshan Kunarajah}
+\author{Akeshan Kunarajah \\ Fakultät 8 \\
+Heidelsheim Lehranstalt}
 
 \date{\today}
+
 
 \begin{document}
 \maketitle
 \tableofcontents
+\thispagestyle{empty}
 
+
+\newpage
+\setcounter{page}{1}
+\section{Grundlegende Mathematik}
+\subsection{Potenzregeln}
+
+\begin{align}
+a^{0}=1
+\end{align}
+
+\begin{align}
+a^{1}=a
+\end{align}
+
+\begin{align}
+a^{m} \cdot a^{n} = a^{m+n}
+\end{align}
+
+\begin{align}
+(a^{m})^{n} = a^{m \cdot n}
+\end{align}
+
+\begin{align}
+a^{n} \cdot b^{n} = (ab)^{n}
+\end{align}
+
+\begin{align}
+a^{-n} = \frac{1}{a^{n}}
+\end{align}
+
+\begin{align}
+\frac{a^{n}}{a^{m}} = a^{n-m}
+\end{align}
+
+\begin{align}
+a^{\frac{1}{n}} = \sqrt[n]{a}
+\end{align}
+
+\begin{align}
+a^{\dfrac{m}{n}} = \sqrt[n]{a^{m}}
+\end{align}
+
+\subsubsection{Quadratische Gleichungen}
+\begin{align}
+x^{2} + px + p = 0
+\\
+\longrightarrow x_{1,2} = -\frac{p}{2} \pm \sqrt{(\frac{p}{q})^{2} - q}
+\end{align}
+
+\begin{align}
+ax^{2} + bx + c = 0
+\\
+\longrightarrow x_{1,2}=\frac{-b \pm \sqrt{b^{2}-4 \cdot a \cdot c}}{2 \cdot a}
+\end{align}
+
+\subsubsection{Binomische Formeln}
+\begin{align}
+(a+b)^{2} = a^{2} + 2ab + b^{2}
+\end{align}
+
+\begin{align}
+(a-b)^{2} = a^{2} -2ab + b^{2}
+\end{align}
+
+\begin{align}
+(a+b)(a-b) = a^{2}-b^{2}
+\end{align}
+
+\newpage
 \section{Vertiefungskurs Mathematik}
+
 \subsection{Konvergenz}
+Sei $(a_{n})$ eine Folge. Diese Folge ist genau dann konvergent, wenn sie einen Grenzwert $a$ besitzt, sodass für alle $\epsilon > 0$ ein $n_{0}\in\mathbb{N}$ existiert mit $|a_{n}-a|<\epsilon$ \, $\forall n\geq n_{0}$.
+
+\begin{align}
+\lim_{n \to \infty} a_{n} = a
+\end{align}
+
+Beispiel 1:
+
+\begin{align}
+\lim_{n \to \infty} \frac{1}{n} = 0 \hspace{10pt} \rightarrow Nullfolge
+\end{align}
+
+Beispiel 2:
+
+\begin{align}
+\lim_{n \to \infty} \frac{9n^{4}-3n^{2}}{3n^{4}-4n^{3}+2n} =  \frac{n^{4}(9-\frac{3}{n^{2}})}{n^{^{4}}(3-\frac{4}{n}+\frac{2}{n^{3}})} =  \frac{(9-\frac{3}{n^{2}})}{(3-\frac{4}{n}+\frac{2}{n^{3}})} = \frac{9}{3} = 3 
+\end{align}
+
+\subsection{Beschränktheit}
+Eine Folge $(a_{n})$ ist dann beschränkt, wenn es zwei Zahlen $s$ und $S$ gibt, so dass jedes Glied der Folge $(a_{n})$ größer s und kleiner S ist. \\Es gilt also:
+
+\begin{align}
+s\leq a_{n} \leq S \hspace{8pt} \forall n \in \mathbb{N}
+\end{align}
+Somit ist $(a_{n})$ beschränkt.
 
 \end{document}
